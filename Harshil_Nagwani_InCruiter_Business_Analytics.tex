@@ -1,0 +1,161 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Harshil Nagwani} \\ \vspace{4pt}
+    \small
+    Bhopal, India \quad $|$ \quad
+    \href{mailto:harshil.nagwani22@gmail.com}{\faEnvelope\ harshil.nagwani22@gmail.com} \quad $|$ \quad
+    \href{tel:+917999991922}{\faPhone\ +91 7999991922} \\ \vspace{3pt}
+    \href{https://www.linkedin.com/in/harshil-nagwani/}{\faLinkedin\ LinkedIn} \quad $|$ \quad
+    \href{https://github.com/harshilnagwani}{\faGithub\ GitHub} \quad $|$ \quad
+    \href{https://harshilnagwani.github.io}{\faGlobe\ harshilnagwani.github.io}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Final-year CS student who builds things that actually get used --- Excel dashboards, SQL pipelines, BRDs, and SOPs that non-technical stakeholders adopt without hand-holding. I've cut reporting turnaround by 50\% and processed 150K+ records across real projects. InCruiter's vision of intelligent hiring is where I want to grow, and I bring the analytical groundwork to help get it there.
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming:}{ Python, SQL (Joins, Aggregations, Subqueries), Java, C++} \\
+     \textbf{Business Systems \& IT:}{ Requirements Gathering, Functional Specifications, Workflow Automation, UAT Testing, Defect Tracking, Process Improvement} \\
+     \textbf{Data \& Analytics:}{ Excel (Pivot Tables, Dynamic Charts, Dashboard Design, Advanced Formulas), Power BI, Tableau, Google Sheets, ETL, Reporting, Data Validation} \\
+     \textbf{Tools \& Platforms:}{ MySQL, AWS, Git, Jupyter Notebooks} \\
+     \textbf{Documentation:}{ BRDs, SOPs, FAQs, Release Notes, User Guides} \\
+     \textbf{Soft Skills:}{ Stakeholder Communication, Cross-functional Coordination, Analytical Thinking, Learning Agility}
+    }}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{Recruitment Funnel Analytics \& Hiring Efficiency Dashboard} $|$ \emph{Excel, SQL, Power BI}}{}
+        \resumeItemListStart
+            \resumeItem{Gathered requirements from HR stakeholders and built an end-to-end recruitment funnel analytics dashboard in Excel, reducing ad-hoc reporting requests by $\sim$45\% through self-serve slicers and automated KPI tracking across 8 hiring stages.}
+            \resumeItem{Analyzed 19,000+ candidate records using Excel pivot tables, XLOOKUP, and calculated fields, identifying a 60\% funnel drop-off at the Interview-to-Offer stage --- enabling targeted process intervention and recruiter workload rebalancing.}
+            \resumeItem{Authored a BRD, data dictionary, and SOP documentation pack, enabling non-technical HR users to independently refresh and interpret the dashboard without analyst support.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Scope-3 Emissions Snapshot \& Supplier Risk Score} $|$ \emph{Python, SQL, Power BI}}{}
+        \resumeItemListStart
+            \resumeItem{Gathered business requirements and led digitization of fragmented procurement workflows by integrating 5+ raw datasets into automated SQL/Python pipelines, reducing manual effort by 40\% and ensuring data consistency across sources.}
+            \resumeItem{Converted business needs into a multi-factor supplier risk scoring framework, enabling faster prioritization of 100+ vendors for sustainability and ESG reporting decisions.}
+            \resumeItem{Built Power BI dashboards and end-user documentation packs (SOPs, user guides), improving reporting adoption and decision visibility across stakeholders.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Sales Insights Dashboard} $|$ \emph{Power BI, SQL, Python}}{}
+        \resumeItemListStart
+            \resumeItem{Gathered reporting requirements from business users, translated needs into KPI dashboards tracking revenue, market trends, and customer performance --- reducing manual reporting turnaround by 50\%.}
+            \resumeItem{Authored complex SQL queries to extract and transform 150,000+ sales records across 15 markets, identifying profit margin gaps and revenue concentration risks for the Sales Director.}
+            \resumeItem{Performed validation testing and resolved data inconsistencies before deployment, improving reporting accuracy by 35\% and eliminating 100\% of invalid entries pre-load.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={\textbullet}]
+    \small{
+        \item Diploma in Microsoft Excel for Beginners and Experts -- Alison (Advanced Level)
+        \item Introduction to MS Excel -- Simplilearn SkillUp (Microsoft Content Partner)
+        \item Databases for Developers: Foundations -- Oracle
+        \item Generative AI Business Strategy \& Solution Design -- AWS
+        \item Business Analytics Certification -- HubSpot Academy
+        \item Business Intelligence Fundamentals -- Simplilearn SkillUp
+    }
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Vellore Institute of Technology}{Oct 2022 -- Present}
+        {B.Tech, Computer Science \& Engineering}{CGPA: 7.99}
+
+    \resumeSubheading
+        {Campion School, Bhopal}{2022}
+        {Class XII (CBSE)}{Score: 85\%}
+
+    \resumeSubheading
+        {Campion School, Bhopal}{2020}
+        {Class X (CBSE)}{Score: 90\%}
+
+\resumeSubHeadingListEnd
+
+\end{document}
